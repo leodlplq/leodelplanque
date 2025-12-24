@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-950 text-gray-950 dark:text-gray-100`}
       >
         <header className="w-full flex items-center justify-center  gap-2 border-b border-gray-200 dark:border-gray-800">
-          <div className="h-full p-4 mx-30 w-full  border-l border-r border-gray-200 dark:border-gray-800 flex items-center justify-between">
+          <div className="h-full p-4 md:mx-30 w-full  md:border-l md:border-r border-gray-200 dark:border-gray-800 flex items-center justify-between">
             <div className="flex items-center gap-6">
               <Link href={"/"} className="font-bold">
                 Léo DELPLANQUE
@@ -63,9 +63,9 @@ export default function RootLayout({
         </header>
 
         <div className="relative">
-          <div className="box-content absolute top-0 left-0 min-h-screen h-full w-30 repeating-gradient-lines border-r border-gray-200 dark:border-gray-800"></div>
-          <main className="mx-30 p-2">{children}</main>
-          <div className="box-content absolute top-0 right-0 min-h-screen h-full w-30 repeating-gradient-lines border-l border-gray-200 dark:border-gray-800"></div>
+          <div className="hidden md:block box-content absolute top-0 left-0 min-h-screen h-full w-30 repeating-gradient-lines border-r border-gray-200 dark:border-gray-800"></div>
+          <main className="md:mx-30 p-2">{children}</main>
+          <div className="hidden md:block box-content absolute top-0 right-0 min-h-screen h-full w-30 repeating-gradient-lines border-l border-gray-200 dark:border-gray-800"></div>
         </div>
       </body>
     </html>

@@ -8,7 +8,7 @@ export default async function Home() {
     <div className="p-4">
       <h1 className="text-4xl font-bold">Blog</h1>
 
-      <section className="grid grid-cols-4 mt-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
         {blogPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <article

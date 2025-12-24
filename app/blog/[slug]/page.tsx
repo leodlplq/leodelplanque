@@ -9,9 +9,9 @@ export default async function Page({
   const { default: Post } = await import(`@/content/${slug}.mdx`);
 
   return (
-    <>
+    <section className="p-4">
       <Post />
-    </>
+    </section>
   );
 }
 
