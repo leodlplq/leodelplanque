@@ -20,6 +20,9 @@ importers:
       '@types/mdx':
         specifier: ^2.0.13
         version: 2.0.13
+      iconoir-react:
+        specifier: ^7.11.0
+        version: 7.11.0(react@19.2.3)
       next:
         specifier: 16.1.0
         version: 16.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -620,6 +623,11 @@ packages:
 
   hast-util-whitespace@3.0.0:
     resolution: {integrity: sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==}
+
+  iconoir-react@7.11.0:
+    resolution: {integrity: sha512-uvTKtnHYwbbTsmQ6HCcliYd50WK0GbjP497RwdISxKzfS01x4cK1Mn/F2mT/t2roSaJQ0I+KnHxMcyvmNMXWsQ==}
+    peerDependencies:
+      react: 18 || 19
 
   inline-style-parser@0.2.7:
     resolution: {integrity: sha512-Nb2ctOyNR8DqQoR0OwRG95uNWIC0C1lCgf5Naz5H6Ji72KZ8OcFZLz2P5sNgwlyoJ8Yif11oMuYs5pBQa86csA==}
@@ -1540,6 +1548,10 @@ snapshots:
   hast-util-whitespace@3.0.0:
     dependencies:
       '@types/hast': 3.0.4
+
+  iconoir-react@7.11.0(react@19.2.3):
+    dependencies:
+      react: 19.2.3
 
   inline-style-parser@0.2.7: {}
 

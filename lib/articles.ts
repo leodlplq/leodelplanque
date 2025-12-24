@@ -17,8 +17,6 @@ export interface PostMetadata {
 export const getAllBlogPosts = async (): Promise<PostMetadata[]> => {
   const fileNames = fs.readdirSync(postsDirectory);
 
-  console.log(fileNames);
-
   const allPostsPromises = fileNames
     .filter((file) => {
       return file.endsWith(".mdx") || file.endsWith(".md");
